@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Code Pro', monospace;
+    background: #C6C6C6;
+}
+
+.container {
+    width: 375px;
+    margin: 20px auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #C6C6C6;
+    background: #ffffff;
+    padding: 10px;
+
+}
+
+.logo {
+    width: 127px;
+    height: 43.02px
+}
+
+.user-pics {
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+}
+
+section {
+    width: 375px;
+    background: #ffffff;
+    padding-bottom: 5px;
+}
+
+.user-info {
+    display: flex;
+    align-content: center;
+    padding: 15px 10px;
+}
+
+/* typograpy */
+h3, p {
+    margin: 0 10px;
+}
+
+h3, h4 {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 15px;
+    width: 346px;
+}
+
+
+.comments {
+    font-weight: 400;
+    line-height: 15px;
+    font-size: 13px;
+    color: #000;
+}
+
+.like-section .likes {
+    margin: 4px 0;
+}
+
+
+.country p {
+    font-size: 12px;
+    font-weight: 400;
+    display: block;
+    margin: 4px 0;
+    line-height: 13px;
+    color: black;
+}
+
+.post-image {
+    width: 100%;
+}
+
+
+
+.like-section {
+    
+    margin: 10px;
+}
+
+button {
+    border: none;
+    background: #ffffff;
+}
+
+
+.icon {
+    width: 23px;
+    height: 23px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.25s;
+}
+
+.icon:hover,
+.icon:active {
+    opacity: 5;
+
+}
+
+.section-two {
+    margin-top: 20px;
+}
