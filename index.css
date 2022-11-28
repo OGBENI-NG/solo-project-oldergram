@@ -1,4 +1,6 @@
-* {
+*, 
+*::after, 
+*::before {
     box-sizing: border-box;
 }
 
@@ -7,10 +9,7 @@ body {
     background: #C6C6C6;
 }
 
-.container {
-    width: 375px;
-    margin: 20px auto;
-}
+
 
 header {
     display: flex;
@@ -18,7 +17,7 @@ header {
     align-items: center;
     border-bottom: 1px solid #C6C6C6;
     background: #ffffff;
-    padding: 10px;
+    padding: 1em;
 
 }
 
@@ -34,49 +33,43 @@ header {
 }
 
 section {
-    width: 375px;
-    background: #ffffff;
-    padding-bottom: 5px;
+    background: #EDEDED;
+    margin-bottom: 1em;
+
 }
 
 .user-info {
+    display: block;
     display: flex;
-    align-content: center;
-    padding: 15px 10px;
+    align-items: center;
+    gap: .5em;
+    padding: 0 1.25em;
+    
 }
 
-/* typograpy */
-h3, p {
-    margin: 0 10px;
-}
 
 h3, h4 {
     font-weight: 700;
-    font-size: 13px;
-    line-height: 15px;
-    width: 346px;
+    font-size: .8125rem;
+    
+}
+
+h4 {
+    margin-top: 1em;
 }
 
 
 .comments {
     font-weight: 400;
-    line-height: 15px;
-    font-size: 13px;
+    font-size: .8125rem;
     color: #000;
 }
 
-.like-section .likes {
-    margin: 4px 0;
-}
-
-
 .country p {
-    font-size: 12px;
+    font-size: .8125rem;
     font-weight: 400;
-    display: block;
-    margin: 4px 0;
-    line-height: 13px;
     color: black;
+    line-height: 0;
 }
 
 .post-image {
@@ -86,30 +79,55 @@ h3, h4 {
 
 
 .like-section {
-    
-    margin: 10px;
+    padding:.8em 1.25em;
 }
 
 button {
     border: none;
+    background: #EDEDED;
+
+}
+
+
+i {
+    font-size: 1.5rem;
+    cursor: pointer;
+    opacity: 0.7;
+    color: #27272A;
+    
+}
+
+
+.like-color {
+    color: #e20b48;
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    border-top: 1px solid #C6C6C6;
     background: #ffffff;
 }
 
-
-.icon {
-    width: 23px;
-    height: 23px;
-    cursor: pointer;
-    opacity: 0.7;
-    transition: opacity 0.25s;
+footer h1, footer p {
+    font-weight: 700;
+    font-size: 1rem;
 }
 
-.icon:hover,
-.icon:active {
-    opacity: 5;
-
+footer p {
+    display: block;
+    margin-top: -0.9em;
+    font-size: .75rem;
+    color: #27272A;
+    
 }
 
-.section-two {
-    margin-top: 20px;
+
+@media (min-width: 768px) {
+    .container {
+        width: 90%;
+        max-width: 750px;
+        margin: 0 auto;
+    }
+
 }
