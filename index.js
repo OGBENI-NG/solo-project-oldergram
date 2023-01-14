@@ -15,19 +15,10 @@ function handleComment(commentId) {
     const targetComment = likesObjects.filter( commentEl => {
         return commentEl.uuid === commentId
     })[0]
-
+   
     if(targetComment.isComment) {
-        document.querySelectorAll('[data-comments]').forEach(commentEl => {{
-            commentEl.style.display = 'block'
-        }})
-    } else {
         
-        document.querySelectorAll('[data-comments]').forEach(commentEl => {{
-            commentEl.style.display = 'none'
-        }})
     }
-    targetComment.isComment = !targetComment.isComment 
-    
 }
 
 //like function

@@ -105,7 +105,7 @@ i {
     gap: 1em;
 }
 
-.modal {
+.hidden {
     display: none;
 }
 
